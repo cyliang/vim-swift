@@ -54,7 +54,7 @@ highlight default link swiftOperatorKeywords Operator
 
 " {{{ Type
 syntax match swiftTypeIdentifier /\<[[:alpha:]_][[:alnum:]_.]*/ contained
-syntax match swiftType /: .*/ contains=swiftTypeIdentifier
+syntax match swiftType /: [[:alpha:]_][[:alnum:]_.]*/ contains=swiftTypeIdentifier
 highlight default link swiftType Operator
 highlight default link swiftTypeIdentifier Type
 " }}}
